@@ -1,3 +1,4 @@
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -37,7 +38,7 @@ public class Payroll
         return Salary;
         }
 
-    /*The getter for bonus
+    /*The getter for bonus  
      * @return the bonus*/
      
         public double getBonus() 
@@ -52,5 +53,13 @@ public class Payroll
         return emp;
     }
     
-    
+    /** Calculating Final Salary with bonus
+     * 
+     * @param Salary
+     * @return Final Salary
+     */
+    public double finalSalary(double Salary){
+        double newSalary=Salary+(Salary*0.10);
+        return newSalary;
+    }
 }
